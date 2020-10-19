@@ -1,0 +1,15 @@
+﻿<Window x:Class="Uppgift2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift2"
+        mc:Ignorable="d"
+        Title="Fyll i ditt namn" Height="173" Width="322">
+    <Grid>
+        <Button x:Name="bekräftelseknapp" Content="OK" HorizontalAlignment="Left" Margin="45,83,0,0" VerticalAlignment="Top" Height="28" Width="84" Click="bekräftelseknapp_Click"/>
+        <Label x:Name="namnbeskrivning" Content="Namn" HorizontalAlignment="Left" Margin="27,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="namnruta" HorizontalAlignment="Left" Margin="27,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24" TextChanged="namnruta_TextChanged"/>
+
+    </Grid>
+</Window>
