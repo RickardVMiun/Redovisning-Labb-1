@@ -1,0 +1,21 @@
+﻿<Window x:Class="Uppgift5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift5"
+        mc:Ignorable="d"
+        Title="Miniräknare" Height="340" Width="481">
+    <Grid>
+        <Button x:Name="beräkna" Content="Beräkna" Margin="224,231,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="beräkna_Click" Height="38" Width="92"/>
+        <Button x:Name="rensa" Content="Rensa" Margin="326,231,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="rensa_Click" Visibility="Visible" Background="White" RenderTransformOrigin="0.5,0.5" Height="38" Width="92"/>
+        <TextBox x:Name="tal1ruta" HorizontalAlignment="Left" Margin="45,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="31" TextChanged="tal1ruta_TextChanged"/>
+        <Label x:Name="tal1text" Content="Tal 1" HorizontalAlignment="Left" Margin="45,32,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="tal2text" Content="Tal 2" HorizontalAlignment="Left" Margin="45,119,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="tal2ruta" HorizontalAlignment="Left" Margin="45,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="31" TextChanged="tal2ruta_TextChanged"/>
+        <Label x:Name="summatext" Content="Summa" HorizontalAlignment="Left" Margin="45,202,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="summaruta" HorizontalAlignment="Left" Margin="45,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="31" TextChanged="summaruta_TextChanged"/>
+    </Grid>
+
+
+</Window>
