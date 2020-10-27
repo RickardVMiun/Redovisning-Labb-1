@@ -46,6 +46,10 @@ namespace Uppgift9a
             {
                 ålderstext.Text = ($"Hej {användarensNamn}, du är {userAge} och du får titta på filmer med åldersgräns upp till 7 år.");
             }
+            else
+            {
+                ålderstext.Text = ("Du måste skriva namn och ålder");
+            }
         }
 
         private void namnbox_TextChanged(object sender, TextChangedEventArgs e)
