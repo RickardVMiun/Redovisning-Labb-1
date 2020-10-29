@@ -1,0 +1,25 @@
+﻿<Window x:Class="Uppgift11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift11"
+        mc:Ignorable="d"
+        Title="Smörgåsen" Height="414" Width="326">
+    <Grid x:Name="___No_Name_" Margin="0,0,0,-6">
+        <Label Content="Oturskalkylkator" HorizontalAlignment="Left" Margin="33,24,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <Button x:Name="mindreotur" Content="Mindre&#xD;&#xA;otur" HorizontalAlignment="Left" Margin="25,95,0,0" VerticalAlignment="Top" Width="54" Height="40" Click="mindreotur_Click"/>
+        <ProgressBar x:Name="bar" HorizontalAlignment="Left" Height="20" Margin="90,105,0,0" VerticalAlignment="Top" Width="140" Minimum="0" Maximum="100" Value="50" ValueChanged="ProgressBar_ValueChanged"/>
+        <Button x:Name="merotur" Content="Mer&#xD;&#xA;otur" HorizontalAlignment="Left" Margin="245,95,0,0" VerticalAlignment="Top" Height="40" Width="54" Click="merotur_Click"/>
+        <Label Content="Antal försök" HorizontalAlignment="Left" Margin="31,167,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <TextBox x:Name="försök" HorizontalAlignment="Left" Margin="31,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Utfall" HorizontalAlignment="Left" Margin="31,253,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <Label Content="Antal åt fel håll: " HorizontalAlignment="Left" Margin="33,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="Antal åt rätt håll:" HorizontalAlignment="Left" Margin="33,328,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="starta" Content="Starta" HorizontalAlignment="Left" Margin="202,211,0,0" VerticalAlignment="Top" Width="60" Click="starta_Click"/>
+        <Label x:Name="rätthållsiffror" Content="" HorizontalAlignment="Left" Margin="130,297,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="felhållsiffror" Content="" HorizontalAlignment="Left" Margin="130,328,0,0" VerticalAlignment="Top"/>
+        <TextBlock Text="{Binding ElementName=bar, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Left" Margin="196,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="Normal"/>
+
+    </Grid>
+</Window>
